@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install type="module" version="1.5" method="upgrade">
+	<name>jTips Overall Ladder Module</name>
+	<author>jTips</author>
+	<creationDate>May 2009</creationDate>
+	<copyright>(C) jTips</copyright>
+	<license>Commercial - Do not modify or redistribute</license>
+	<authorEmail>sales@jtips.com.au</authorEmail>
+	<authorUrl>www.jtips.com.au</authorUrl>
+	<version>1.0.0</version>
+	<description>Displays a combined user ladder from all current competitions.</description>
+	<files>
+		<filename module="mod_jtips_overall_ladder">mod_jtips_overall_ladder.php</filename>
+		<filename module="mod_jtips_overall_ladder">index.html</filename>
+		<filename module="mod_jtips_overall_ladder">helper.php</filename>
+		<filename module="mod_jtips_overall_ladder">tmpl/default.php</filename>
+	</files>
+	<params>
+	<param name="display" type="list" default="name" label="User Display" description="Set how each user should be displayed.">
+	<option value="name">Name</option>
+	<option value="username">Username</option>
+	</param>
+	<param type="list" name="link" default="" label="Social Integration" description="Link names to profile pages from selected community application">
+	<option value="">--None--</option>
+	<option value="JomSocial">JomSocial</option>
+	<option value="CommunityBuilder">Community Builder</option>
+	</param>
+	<param type="radio" name="avatar" default="0" label="Show User Image" description="Show the profile image for each user">
+	<option value="0">No</option>
+	<option value="1">Yes</option>
+	</param>
+	<param name="field" type="list" default="points" label="Score Field">
+	<option value="points">Points</option>
+	<option value="precision">Precision</option>
+	</param>
+	<param name="order" type="list" default="DESC" label="Ordering">
+	<option value="DESC">Highest to Lowest</option>
+	<option value="ASC">Lowest to Highest</option>
+	</param>
+	<param name="limit" type="list" default="10" label="Show Top Users" description="List the top number of users as specified">
+	<option value="5">5</option>
+	<option value="10">10</option>
+	<option value="15">15</option>
+	<option value="20">20</option>
+	<option value="25">25</option>
+	<option value="30">30</option>
+	<option value="50">50</option>
+	<option value="100">100</option>
+	<option value="">All</option>
+	</param>
+	</params>
+</install>

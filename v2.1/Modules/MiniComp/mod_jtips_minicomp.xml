@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install type="module" version="1.5" method="upgrade">
+	<name>jTips Mini Comp</name>
+	<author>jTips</author>
+	<creationDate>July 2009</creationDate>
+	<copyright>(C) jTips</copyright>
+	<license>Commercial - Do not modify or redistribute</license>
+	<authorEmail>sales@jtips.com.au</authorEmail>
+	<authorUrl>www.jtips.com.au</authorUrl>
+	<version>1.0.0</version>
+	<description>Displays the winner over a number of rounds.</description>
+	<files>
+		<filename module="mod_jtips_minicomp">mod_jtips_minicomp.php</filename>
+		<filename module="mod_jtips_minicomp">index.html</filename>
+		<filename module="mod_jtips_minicomp">helper.php</filename>
+		<filename module="mod_jtips_minicomp">tmpl/default.php</filename>
+		<filename module="mod_jtips_minicomp">tmpl/index.html</filename>
+	</files>
+	<params>
+		<param name="season" type="sql" label="Season" description="The name of the season to show details for. The must be the exact name as entered in the Season Manager." query="SELECT * FROM #__jtips_seasons ORDER BY name ASC" key_field="id" value_field="name" />
+		<param type="text" default="3" name="rounds" label="Competition Length" description="The number of rounds each competition will run for" />
+		<param type="spacer" default="Display Settings" />
+		<param type="radio" default="1" name="show_detail" label="Show Details" description="Display details of each round in the time frame">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="display" type="list" default="name" label="User Display" description="Set how each user should be displayed.">
+			<option value="name">Name</option>
+			<option value="username">Username</option>
+		</param>
+		<param type="list" name="link" default="" label="Social Integration" description="Link names to profile pages from selected community application">
+			<option value="">--None--</option>
+			<option value="JomSocial">JomSocial</option>
+			<option value="CommunityBuilder">Community Builder</option>
+		</param>
+		<param type="radio" name="avatar" default="0" label="Show User Image" description="Show the profile image for each user">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</install>

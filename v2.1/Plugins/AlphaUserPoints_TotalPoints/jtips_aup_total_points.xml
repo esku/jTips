@@ -1,0 +1,8 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<alphauserpoints type="plugin">
+     <rule>jTips 2.1 Total Points</rule>
+     <description>The number of points a user scores in a jTips Round will be added to the users points tally</description>
+     <component>com_jtips</component>
+     <plugin_function>plgaup_jtips_total_points</plugin_function>
+     <fixed_points>false</fixed_points>
+</alphauserpoints>

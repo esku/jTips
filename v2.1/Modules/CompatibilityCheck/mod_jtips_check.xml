@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0">
+	<name>jTips 2.0 System Check</name>
+	<author>jTips</author>
+	<creationDate>July 2008</creationDate>
+	<copyright>(C) jTips</copyright>
+	<license>Commercial - Do not modify or redistribute</license>
+	<authorEmail>sales@jtips.com.au</authorEmail>
+	<authorUrl>www.jtips.com.au</authorUrl>
+	<version>2.0.1</version>
+	<description>Checks if your system is capable of running the jTips 2.0 component.</description>
+	<files>
+		<filename module="mod_jtips_check">mod_jtips_check.php</filename>
+		<filename module="mod_jtips_check">mod_jtips_check/get_version_info.php</filename>
+	</files>
+</mosinstall>

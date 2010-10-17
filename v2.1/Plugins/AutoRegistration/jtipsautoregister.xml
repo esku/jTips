@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="user" method="upgrade">
+        <name>jTips Auto Registration</name>
+        <author>jTips</author>
+        <creationDate>February 2010</creationDate>
+        <copyright>Copyright (C) 2009 jTips. All rights reserved.</copyright>
+        <license>Commercial</license>
+        <authorEmail>sales@jtips.com.au</authorEmail>
+        <authorUrl>www.jtips.com.au</authorUrl>
+        <version>1.1.2</version>
+        <description>Automatically adds user to a configured jTips competition when they register on the site.</description>
+        <files>
+                <filename plugin="jtipsautoregister">jtipsautoregister.php</filename>
+        </files>
+        <params>
+		<param name="season_id" type="sql" label="Auto-Subscribe" description="Select the season that new registrants will be subscribed to." query="SELECT id, name from #__jtips_seasons" value_field="name" key_field="id" />
+		<param name="auto_all" type="radio" default="0" label="Add to All Competitions" description="If running multiple competitions, setting this to Yes to will add the user to all current competitions">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="approve" type="radio" default="0" label="Auto-Approve" description="New registrants will be automatically approved.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+	</params>
+</install>

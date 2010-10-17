@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install type="module" version="1.5" method="upgrade">
+	<name>jTips Team Ladder</name>
+	<author>jTips</author>
+	<creationDate>August 2009</creationDate>
+	<copyright>(C) jTips</copyright>
+	<license>Commercial - Do not modify or redistribute</license>
+	<authorEmail>sales@jtips.com.au</authorEmail>
+	<authorUrl>www.jtips.com.au</authorUrl>
+	<version>2.1.2</version>
+	<description>jTips Team Leaderboard - Displays a concise team ladder for one.</description>
+	<files>
+		<filename module="mod_jtips_team_ladder">mod_jtips_team_ladder.php</filename>
+		<filename module="mod_jtips_team_ladder">index.html</filename>
+	</files>
+	<params>
+		<param name="season" type="sql" label="Season:" description="The name of the season to show the ladder for" query="SELECT name FROM #__jtips_seasons ORDER BY name ASC" key_field="name" value_field="name" />
+		<param name="incimage" type="radio" default="0" label="Show Team Logos" description="Displays the mini team logo if available">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+		</param>
+		<param name="team_field" type="list" default="points" label="Team Field" description="Select which field from the teams will be shown">
+		<option value="-1">--None--</option>
+		<option value="points">Points</option>
+		<option value="wins">Wins</option>
+		<option value="played">Played</option>
+		<option value="points_for">In-Game Points Scored</option>
+		<option value="points_against">In-Game Points Conceeded</option>
+		</param>
+	</params>
+</install>

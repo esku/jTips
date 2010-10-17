@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install type="module" version="1.5" method="upgrade">
+	<name>jTips Best Tipper</name>
+	<author>jTips</author>
+	<creationDate>February 2009</creationDate>
+	<copyright>(C) jTips</copyright>
+	<license>Commercial - Do not modify or redistribute</license>
+	<authorEmail>sales@jtips.com.au</authorEmail>
+	<authorUrl>www.jtips.com.au</authorUrl>
+	<version>2.1.2</version>
+	<description>jTips Best Tipper modules displays details about the best on average tipper for a competition</description>
+	<files>
+		<filename module="mod_jtips_best_tipper">mod_jtips_best_tipper.php</filename>
+		<filename module="mod_jtips_best_tipper">index.html</filename>
+	</files>
+	<params>
+		<param name="season" type="sql" label="Season" description="The name of the season to show details for. The must be the exact name as entered in the Season Manager." query="SELECT * FROM #__jtips_seasons ORDER BY name ASC" key_field="name" value_field="name" />
+		<param name="type" type="radio" label="User Type" description="Select which type of user should be displayed" default="best">
+		<option value="best">Best Tipper</option>
+		<option value="worst">Worst Tipper</option>
+		</param>
+		<param name="socimage" type="list" default="1" label="Show Social Avatar From" description="Display the User's profile image from the selected application. Must also be enabled in jTips Configuration.">
+		<option value="">--None--</option>
+		<option value="cb">Community Builder</option>
+		<option value="js">JomSocial</option>
+		</param>
+		<param name="rank" type="radio" default="1" label="Current Rank" description="User's current rank.">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+		</param>
+		<param name="pointst" type="radio" default="1" label="Total Points" description="User's total points.">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+		</param>
+		<param name="points" type="radio" default="1" label="Last Round Points" description="User's points from the most recent round.">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+		</param>
+		<param name="pointsa" type="radio" default="1" label="Average Points" description="User's average score per round.">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+		</param>
+		<param name="prect" type="radio" default="1" label="Total Precision" description="User's total Precision.">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+		</param>
+		<param name="prec" type="radio" default="1" label="Last Round Precision" description="User's Precision from the most recent round.">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+		</param>
+		<param name="preca" type="radio" default="1" label="Average Precision" description="User's average Precision per round.">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+		</param>
+		<param name="comment" type="radio" default="1" label="Most Recent Comment" description="User's comment from the most recent round.">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+		</param>
+	</params>
+</install>

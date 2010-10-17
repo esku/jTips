@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install type="module" version="1.5" method="upgrade">
+	<name>jTips Upcoming Games</name>
+	<author>jTips</author>
+	<creationDate>August 2009</creationDate>
+	<copyright>(C) jTips</copyright>
+	<license>Commercial - Do not modify or redistribute</license>
+	<authorEmail>sales@jtips.com.au</authorEmail>
+	<authorUrl>www.jtips.com.au</authorUrl>
+	<version>2.1.3</version>
+	<description>jTips 2.1 Upcoming Games Module displays the match up for the next round</description>
+	<files>
+		<filename module="mod_jtips_upcoming_games">mod_jtips_upcoming_games.php</filename>
+		<filename module="mod_jtips_upcoming_games">index.html</filename>
+	</files>
+	<params>
+		<param name="season" type="sql" label="Season" description="The name of the season to show details for. The must be the exact name as entered in the Season Manager." query="SELECT name FROM #__jtips_seasons ORDER BY name ASC" key_field="name" value_field="name" />
+		<param name="showseason" type="radio" default="1" label="Show Season Name">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+		</param>
+		<param name="showround" type="radio" default="1" label="Show Round Number">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+		</param>
+		<param name="showclose" type="list" default="1" label="Show Round Close Time">
+		<option value="0">No</option>
+		<option value="static">Static</option>
+		<option value="count">Countdown Timer</option>
+		</param>
+	</params>
+</install>

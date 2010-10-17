@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install type="module" version="1.5" method="upgrade">
+	<name>jTips Favourite Team</name>
+	<author>jTips</author>
+	<creationDate>February 2009</creationDate>
+	<copyright>(C) jTips</copyright>
+	<license>Commercial - Do not modify or redistribute</license>
+	<authorEmail>sales@jtips.com.au</authorEmail>
+	<authorUrl>www.jtips.com.au</authorUrl>
+	<version>2.1.0</version>
+	<description>jTips Favourite Team Module displays the most favoured team overall or on a per-person basis.</description>
+	<files>
+		<filename module="mod_jtips_favourite_team">mod_jtips_favourite_team.php</filename>
+		<filename module="mod_jtips_favourite_team">index.html</filename>
+	</files>
+	<params>
+		<param name="season" type="sql" label="Season" description="The name of the season to show details for. The must be the exact name as entered in the Season Manager." query="SELECT * FROM #__jtips_seasons ORDER BY name ASC" key_field="name" value_field="name" />
+		<param name="logo" type="radio" label="Show Team Logo" default="1">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+		</param>
+		<param name="user" type="radio" default="0" label="Show for Current User" description="Display the team most favoured by the currently logged in user">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+		</param>
+	</params>
+</install>

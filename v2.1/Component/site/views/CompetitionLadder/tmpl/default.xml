@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Competition Ladder Layout">
+		<message>
+			<![CDATA[Displays the full user ladder]]>
+		</message>
+	</layout>
+	<state>
+		<name>Competition Ladder</name>
+		<description>Displays the full competition ladder for the selected season.</description>
+		<params>
+		<param name="season_id" type="sql" query="SELECT * FROM #__jtips_seasons ORDER BY name ASC" key_field="id" value_field="name" label="Select Season" description="Season to load for this menu item" />
+		</params>
+	</state>
+</metadata>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0" method="upgrade">
+  <name>jTips</name>
+  <author>Jeremy Roberts</author>
+  <creationDate>November 2009</creationDate>
+  <copyright>(C) 2005 - 2009 Jeremy Roberts. All rights reserved.</copyright>
+  <license>Commercial</license>
+  <authorEmail>support@jtips.com.au</authorEmail>
+  <authorUrl>www.jtips.com.au</authorUrl>
+  <version>2.1.15</version>
+  <description><![CDATA[
+  	<img src='components/com_jtips/images/logo.png' alt='jTips Logo' />
+	<h2>jTips 2.1 - Your ultimate tipping system for Joomla!</h2>
+	<p>&copy; 2009, jTips (<a href='mailto:sales@jtips.com.au'>sales@jtips.com.au</a>)</p>
+	<h4>Now go to the jTips Configuration page to setup your competition!</h4>
+  ]]></description>
+  <files folder="site">
+		<folder>css/</folder>
+		<folder>images/</folder>
+		<folder>js/</folder>
+		<folder>views/</folder>
+		<filename>index.html</filename>
+		<filename>jtips.html.php</filename>
+		<filename>jtips.php</filename>
+	</files>
+  <install>
+	<sql>
+        <file driver="mysql" charset="utf8">sql/install.mysql.sql</file>
+    </sql>
+  </install>
+  <uninstall>
+	<sql>
+        <file driver="mysql" charset="utf8">sql/uninstall.mysql.sql</file>
+    </sql>
+  </uninstall>
+  <administration>
+	<menu img="components/com_jtips/images/MINILOGO.png" link="option=com_jtips&amp;module=Dashboard">jTips</menu>
+	<submenu>
+		<menu img="components/com_jtips/images/MINILOGO.png" link="option=com_jtips&amp;module=Dashboard">Dashboard</menu>
+		<menu img="components/com_jtips/images/MENUROUND.png" link="option=com_jtips&amp;module=Rounds">Round Management</menu>
+		<menu img="components/com_jtips/images/MENUSEASON.png" link="option=com_jtips&amp;module=Seasons">Season Management</menu>
+		<menu img="components/com_jtips/images/MENUTEAM.png" link="option=com_jtips&amp;module=Teams">Team Management</menu>
+		<menu img="components/com_jtips/images/MENUUSER.png" link="option=com_jtips&amp;module=Users">User Management</menu>
+		<menu img="components/com_jtips/images/MENUSETTINGS.png" link="option=com_jtips&amp;module=Configuration&amp;hidemainmenu=1">Configuration</menu>
+	</submenu>
+	<files folder="admin">
+			<folder>classes/</folder>
+			<folder>css/</folder>
+			<folder>fieldmap/</folder>
+			<folder>i18n/</folder>
+			<folder>images/</folder>
+			<folder>lib/</folder>
+			<folder>modules/</folder>
+			<folder>sql/</folder>
+			<folder>utils/</folder>
+			<filename>admin.jtips.html.php</filename>
+			<filename>admin.jtips.php</filename>
+			<filename>index.html</filename>
+			<filename>pilot.php</filename>
+			<filename>toolbar.jtips.php</filename>
+		</files>
+   </administration>
+</install>

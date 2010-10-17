@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5" method="upgrade">
+	<name>jTips Competition Ladder Dashlet</name>
+	<author>jTips</author>
+	<creationDate>November 2008</creationDate>
+	<copyright>(C) jTips</copyright>
+	<license>Commercial - Do not modify or redistribute</license>
+	<authorEmail>sales@jtips.com.au</authorEmail>
+	<authorUrl>www.jtips.com.au</authorUrl>
+	<version>1.0.1</version>
+	<description>jTips Competition Ladder Dashlet displays a concise user ladder. Requires jTips 2.1 or higher. Must be displayed in the jTipsDashboard module position.</description>
+	<files>
+		<filename module="mod_jtips_dash_comp_ladder">mod_jtips_dash_comp_ladder.php</filename>
+		<filename module="mod_jtips_dash_comp_ladder">index.html</filename>
+	</files>
+	<params>
+		<param name="load_mootools" type="radio" default="1" label="Load mootools" description="Loads mootools with this module. Only required if your template does not include mootols by default.">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+		</param>
+	</params>
+</install>

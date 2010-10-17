@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install type="module" version="1.5" method="upgrade">
+	<name>jTips My Tips Dashlet</name>
+	<author>jTips</author>
+	<creationDate>April 2009</creationDate>
+	<copyright>(C) jTips</copyright>
+	<license>Commercial - Do not modify or redistribute</license>
+	<authorEmail>sales@jtips.com.au</authorEmail>
+	<authorUrl>www.jtips.com.au</authorUrl>
+	<version>2.0.0</version>
+	<description>jTips My Tips Dashlet displays a summary of the current users tips for the current round. Requires jTips 2.1 or higher.</description>
+	<files>
+		<filename module="mod_jtips_dash_my_tips">mod_jtips_dash_my_tips.php</filename>
+		<filename module="mod_jtips_dash_my_tips">index.html</filename>
+	</files>
+	<params>
+	<param name="season" type="sql" label="Season" description="The name of the season to show the ladder for" query="SELECT name FROM #__jtips_seasons ORDER BY name ASC" key_field="name" value_field="name" />
+	<param name="display" type="list" default="getDisplayLogoName" label="Team Display" description="Set how the team should be displayed.">
+	<option value="getLogo">Logo Only</option>
+	<option value="getName">Name Only</option>
+	<option value="getDisplayLogoName">Logo and Name</option>
+	</param>
+	<param name="load_mootools" type="radio" default="1" label="Load mootools" description="Loads mootools with this module. Only required if your template does not include mootols by default.">
+	<option value="1">Yes</option>
+	<option value="0">No</option>
+	</param>
+	</params>
+</install>

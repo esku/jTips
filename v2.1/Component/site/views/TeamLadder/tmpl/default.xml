@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Team Ladder Layout">
+		<message>
+			<![CDATA[Displays the full team ladder for the selected season/competition]]>
+		</message>
+	</layout>
+	<state>
+		<name>Team Ladder</name>
+		<description>Displayes the full team ladder for the selected competition. Columns that are displayed can be configured in the jTips Configuration area.</description>
+		<params>
+		<param name="season_id" type="sql" query="SELECT * FROM #__jtips_seasons ORDER BY name ASC" key_field="id" value_field="name" label="Select Season" description="Season to load for this menu item" />
+		</params>
+	</state>
+</metadata>

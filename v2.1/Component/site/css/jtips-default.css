@@ -1,0 +1,114 @@
+/**
+ * Author: Jeremy Roberts
+ * Company: jTips
+ * Website: www.jtips.com.au
+ * Licence: Commercial. May not be copied, modified or redistributed
+ */
+
+/************************************************
+ * Each of these classes can be left blank.
+ * By default each element in jTips makes uses
+ * of a class that should already be defined by 
+ * the current template.
+ *
+ * Defining these classes overrides individual
+ * properties of those classes
+ ************************************************/
+
+/* The default class for the main menu links */
+.jmain_menu {
+	text-align:center;
+	height:32px;
+}
+
+/* The hover effect for the main menu links */
+.jmain_menu_hover {
+	text-align:center;
+	height:32px;
+}
+
+/* Extends componentheading */
+.jmain_heading {
+	text-align:center;
+}
+
+/* Extends sectiontableheader */
+.jtableheader {
+	text-align:center;
+}
+
+/* Extends sectiontableentry1 */
+.jtablerow1 {
+	text-align:center;
+	width:20%;
+}
+
+/* Extends sectiontableentry2 */
+.jtablerow2 {
+	text-align:center;
+	width:20%;
+}
+
+/* Section for Next and Previous links on competition ladder */
+.pagenavigation {
+	text-align:center;
+	padding:5px;
+}
+
+/************************************************
+ * The following classes do not use a defualt 
+ * class on the template\'s stylesheet.
+ * This is the only classed used on those items
+ ***********************************************/
+
+/* No default class for this one. Controls the style
+ * of the season image header */
+.jseason_image {
+	padding-top:10px;
+	padding-bottom:10px;
+	text-align:center;
+}
+
+.draggable {
+margin: 0pt; padding: 10px 0pt; float: left; width: 33%; position: relative; list-style-type: none; display: inline;
+}
+
+.jpreferences {
+	text-align:right;
+	font-size:x-small;
+}
+
+.jseason_select {
+}
+
+.jdatatable {
+	width:100%;
+	margin-bottom:10px;
+}
+
+.jtipcount{
+	border-top:1px solid #4F4F4F;
+}
+
+.junsublink {
+	text-align:right;
+}
+
+.jladderselects {
+}
+
+.jtogglelink {
+	text-align:center;
+}
+
+.jtips-error {
+	color:red;
+}
+
+.disabled_link {
+	color:grey;
+}
+
+.jtips_post_dashboard {
+	text-align:center;
+}

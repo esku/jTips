@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Administration Layout">
+		<message>
+			<![CDATA[Displays the jTips Adminsitrator area. Only one select user per season/competition has access to this section. This section can also be accessed (by the user) from the any jTips page.]]>
+		</message>
+	</layout>
+	<state>
+		<name>jTips Administration</name>
+		<description>Provides a page to allow new rounds to be added and past rounds to be scored. This page is restricted to one selected user - setup in Season Management.</description>
+		<params>
+		<param name="season_id" type="sql" query="SELECT * FROM #__jtips_seasons ORDER BY name ASC" key_field="id" value_field="name" label="Select Season" description="Season to load for this menu item" />
+		</params>
+	</state>
+</metadata>

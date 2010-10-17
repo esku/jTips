@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Tips Panel">
+		<message>
+			<![CDATA[Displays the Tips Panel for the selected season/competition]]>
+		</message>
+	</layout>
+	<state>
+		<name>Tips Panel</name>
+		<description>Displays the Tips Panel for the selected season/competition.</description>
+		<params>
+		<param name="season_id" type="sql" query="SELECT * FROM #__jtips_seasons ORDER BY name ASC" key_field="id" value_field="name" label="Select Season" description="Season to load for this menu item" />
+		</params>
+	</state>
+</metadata>

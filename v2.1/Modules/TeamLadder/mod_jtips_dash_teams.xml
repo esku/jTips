@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install type="module" version="1.5" method="upgrade">
+	<name>jTips Team Ladder Dashlet</name>
+	<author>jTips</author>
+	<creationDate>November 2008</creationDate>
+	<copyright>(C) jTips</copyright>
+	<license>Commercial - Do not modify or redistribute</license>
+	<authorEmail>sales@jtips.com.au</authorEmail>
+	<authorUrl>www.jtips.com.au</authorUrl>
+	<version>1.0.1</version>
+	<description>jTips Team Ladder Dashlet displays a summary of the current team ladder. Requires jTips 2.1 or higher. Must be displayed in the jTipsDash module position.</description>
+	<files>
+		<filename module="mod_jtips_dash_teams">mod_jtips_dash_teams.php</filename>
+		<filename module="mod_jtips_dash_teams">index.html</filename>
+	</files>
+	<params>
+		<param name="load_mootools" type="radio" default="1" label="Load mootools" description="Loads mootools with this module. Only required if your template does not include mootols by default.">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+		</param>
+		<param name="incimage" type="radio" default="0" label="Show Team Logos" description="Displays the mini team logo if available">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+		</param>
+		<param name="team_field" type="list" default="points" label="Team Field" description="Select which field from the teams will be shown">
+		<option value="-1">--None--</option>
+		<option value="points">Points</option>
+		<option value="wins">Wins</option>
+		<option value="played">Played</option>
+		<option value="points_for">In-Game Points Scored</option>
+		<option value="points_against">In-Game Points Conceded</option>
+		</param>
+	</params>
+</install>

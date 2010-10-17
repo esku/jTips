@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<view title="Team Ladder">
+		<message><![CDATA[Displays the full team ladder for the selected competition]]></message>
+	</view>
+</metadata>

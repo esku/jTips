@@ -116,6 +116,10 @@ if (basename($_SERVER['SCRIPT_NAME']) == 'index3.php') {
 	/*
 	 * Check the validity of the Licence data
 	 */
+	/**************************************
+	 *
+	 * LICENSE CHECKING DISABLED - NOW OPEN SOURCE
+	 *
 	if (!$jLicence->checkValidation()) {
 		$jLicence->revalidate();
 	}
@@ -129,6 +133,8 @@ if (basename($_SERVER['SCRIPT_NAME']) == 'index3.php') {
 			}
 		}
 	}
+	*
+	***************************************/
 	/*
 	 * End Licence check
 	 */

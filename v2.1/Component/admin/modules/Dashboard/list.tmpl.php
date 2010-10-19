@@ -150,8 +150,10 @@ class ListMode {
 		<tbody>
 		<tr>
 			<td <?php echo $center; ?>><?php echo getFullVersion(); ?></td>
-			<td <?php echo $center; ?> id="latest_version"><input type="button" onclick="liveCheckLatestVersion('latest_version');" class="button" value="Check Now" <?php if (!$filesWritable) echo "disabled"; ?> /></td>
-			<td <?php echo $center; ?>><span id="liveupdatespan"><?php echo getUpdateButton('', ''); ?></span></td>
+			<!-- td <?php echo $center; ?> id="latest_version"><input type="button" onclick="liveCheckLatestVersion('latest_version');" class="button" value="Check Now" <?php if (!$filesWritable) echo "disabled"; ?> /></td -->
+			<td <?php echo $center; ?>>N/A</td>
+			<!-- td <?php echo $center; ?>><span id="liveupdatespan"><?php echo getUpdateButton('', ''); ?></span></td -->
+			<td <?php echo $center; ?>>N/A</td>
 			<td <?php echo $center; ?>>
 			<?php
 			if ($filesWritable) {

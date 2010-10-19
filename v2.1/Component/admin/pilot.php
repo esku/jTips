@@ -8,7 +8,7 @@ defined('_JEXEC') or defined( '_VALID_MOS' ) or die( 'Restricted access' );
  */
 class jPilot {
 	var $version = '2.1';
-	var $build = '15';
+	var $build = '16';
 	var $updates = array();
 
 	function jPilot() {

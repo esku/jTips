@@ -3,11 +3,11 @@
   <name>jTips</name>
   <author>Jeremy Roberts</author>
   <creationDate>November 2009</creationDate>
-  <copyright>(C) 2005 - 2009 Jeremy Roberts. All rights reserved.</copyright>
-  <license>Commercial</license>
-  <authorEmail>support@jtips.com.au</authorEmail>
+  <copyright>GPLv3</copyright>
+  <license>GPLv3</license>
+  <authorEmail>jeremy.e.roberts@gmail.com</authorEmail>
   <authorUrl>www.jtips.com.au</authorUrl>
-  <version>2.1.15</version>
+  <version>2.1.16</version>
   <description><![CDATA[
   	<img src='components/com_jtips/images/logo.png' alt='jTips Logo' />
 	<h2>jTips 2.1 - Your ultimate tipping system for Joomla!</h2>
